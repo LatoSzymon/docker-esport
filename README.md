@@ -1,12 +1,24 @@
-# chmurowe-projekt
-Projekt na zaliczenie przedmiotu technologie chmurowe, połączony z projektem z bezpieczeństwa aplikacji web
+# Docker-Esport
+
+A containerized platform setup for e-sports-related services. This project demonstrates how to use Docker and Docker Compose to run multiple services related to an esports ecosystem in a scalable and isolated environment.
+
+Key Components & Architecture:
+- Multi-container architecture using docker-compose, enabling easy orchestration of different services.
+- Backend service(s): containerized backend logic (e.g., REST API or game-management backend).
+- Database service: separate container for persistent storage (e.g., MongoDB / SQL) depending on your setup.
+- Scalability & Isolation: each service runs in its own container, making local development, testing, and scaling easier.
+- Configuration via environment variables: all essential settings (ports, credentials) are configurable via .env or compose files.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+(PL) Projekt na zaliczenie przedmiotu technologie chmurowe, połączony z projektem z bezpieczeństwa aplikacji web
 
 
 Celem było stworzenie pełnej aplikacji webowej, uruchamianej przez dockera i/lub kubernetesa. Mamy tu prostą obsługę i zarządzanie bazą esportowych graczy i drużyn oraz zabezpieczenie jej.
 
 Przed użyciem zapoznaj się z treścią instrukcji dołączonej do repozytorium w pliku README, bądź skonsultuj się z lekarzem lub kompetentnym programistą, gdyż każdy kod niewłaściwie stosowany zagraża twojemu życiu lub poczuciu estetyki.
 
-INSTRUKCJA ODPALENIA:
+INSTRUKCJA URUCHOMIENIA:
 (komendy uruchamiane w głównym katalogu projektu)
 
 1. Upewnij się że kubernetes jest włączony (kubectl musi działać)
@@ -39,6 +51,7 @@ INSTRUKCJA ODPALENIA:
 
 9. Opis działania.
     Przy pierwszym uruchomieniu baza graczy i drużyn jest pusta (wolumenów z danymi nie ma w repo), ale z pozycji admina można swobodnie dodawać/edytować/usuwać graczy i drużyny. Zwykły użytkownik takich możliwości, jak można się domyślić, nie ma
+
 
 
 
